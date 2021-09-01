@@ -1,4 +1,4 @@
-# Video Player
+# Copy Cat (React Forms)
 
 For this Codecademy project, we've built a program that lets users type into a textbox and allows thme to visualize the immediate effect that these changes have on the web page.
 
