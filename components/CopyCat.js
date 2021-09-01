@@ -10,18 +10,19 @@ const images = {
 
 export class CopyCat extends React.Component {
   render() {
-    const copying = this.props.copying;
-    const toggleTape = this.props.toggleTape;
+    const { copying, toggleTape, value, handleChange } = this.props;
 
     return (
       <div style={styles.divStyles}>
         <h1 style={{ marginBottom: '80px' }}>Copy Cat</h1>
+        <input type="text" value={value} onChange={handleChange} />
         <img
           alt="cat"
           src={copying ? images.copycat : images.quietcat}
           onClick={toggleTape}
           style={styles.imgStyles}
         />
+        <p>{copying && value}</p>
       </div>
     );
   }
